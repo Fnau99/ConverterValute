@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52627/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52627/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52627/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Converter" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaLiraADem_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaLiraADem" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaLiraADem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaLiraADemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaLiraAFranchi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaLiraAFranchi" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaLiraAFranchi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaLiraAFranchiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaLiraAEuro_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaLiraAEuro" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaLiraAEuro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaLiraAEuroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaDemLira_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaDemLira" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaDemLira_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaDemLiraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaDemAFranchi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaDemAFranchi" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaDemAFranchi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaDemAFranchiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaDemAEuro_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaDemAEuro" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaDemAEuro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaDemAEuroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaFranchiADem_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaFranchiADem" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaFranchiADem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaFranchiADemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaFranchiALira_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaFranchiALira" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaFranchiALira_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaFranchiALiraResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaFranchiAEuro_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaFranchiAEuro" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ConvertiDaFranchiAEuro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertiDaFranchiAEuroResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaLiraADem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConvertiDaLiraADem" message="tns:IService1_ConvertiDaLiraADem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConvertiDaLiraADemResponse" message="tns:IService1_ConvertiDaLiraADem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaLiraAFranchi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConvertiDaLiraAFranchi" message="tns:IService1_ConvertiDaLiraAFranchi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConvertiDaLiraAFranchiResponse" message="tns:IService1_ConvertiDaLiraAFranchi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaLiraAEuro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConvertiDaLiraAEuro" message="tns:IService1_ConvertiDaLiraAEuro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConvertiDaLiraAEuroResponse" message="tns:IService1_ConvertiDaLiraAEuro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaDemLira">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConvertiDaDemLira" message="tns:IService1_ConvertiDaDemLira_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConvertiDaDemLiraResponse" message="tns:IService1_ConvertiDaDemLira_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaDemAFranchi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConvertiDaDemAFranchi" message="tns:IService1_ConvertiDaDemAFranchi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConvertiDaDemAFranchiResponse" message="tns:IService1_ConvertiDaDemAFranchi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaDemAEuro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConvertiDaDemAEuro" message="tns:IService1_ConvertiDaDemAEuro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConvertiDaDemAEuroResponse" message="tns:IService1_ConvertiDaDemAEuro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaFranchiADem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConvertiDaFranchiADem" message="tns:IService1_ConvertiDaFranchiADem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConvertiDaFranchiADemResponse" message="tns:IService1_ConvertiDaFranchiADem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaFranchiALira">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConvertiDaFranchiALira" message="tns:IService1_ConvertiDaFranchiALira_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConvertiDaFranchiALiraResponse" message="tns:IService1_ConvertiDaFranchiALira_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaFranchiAEuro">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ConvertiDaFranchiAEuro" message="tns:IService1_ConvertiDaFranchiAEuro_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ConvertiDaFranchiAEuroResponse" message="tns:IService1_ConvertiDaFranchiAEuro_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaLiraADem">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConvertiDaLiraADem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaLiraAFranchi">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConvertiDaLiraAFranchi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaLiraAEuro">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConvertiDaLiraAEuro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaDemLira">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConvertiDaDemLira" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaDemAFranchi">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConvertiDaDemAFranchi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaDemAEuro">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConvertiDaDemAEuro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaFranchiADem">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConvertiDaFranchiADem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaFranchiALira">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConvertiDaFranchiALira" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertiDaFranchiAEuro">
+      <soap:operation soapAction="http://tempuri.org/IService1/ConvertiDaFranchiAEuro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:52627/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

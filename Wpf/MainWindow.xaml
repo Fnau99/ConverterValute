@@ -1,0 +1,29 @@
+﻿<Window x:Class="Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+            <TextBox Width="150" Height="50" Text="{Binding Importo}"></TextBox>
+            <ComboBox Width="150" Height="50" DisplayMemberPath="Testo" SelectedValuePath="Valore" ItemsSource="{Binding Valute}" SelectedValue="{Binding ValoreSelezionatoDa}"></ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+            <ComboBox Width="150" Height="50" DisplayMemberPath="Testo" SelectedValuePath="Valore" ItemsSource="{Binding Valute}" SelectedValue="{Binding ValoreSelezionatoa}"></ComboBox>
+            <Button Width="100" Height="50" Click="Button_Click">Converti</Button>
+            <Label Content="{Binding Risultato}"></Label>
+        </StackPanel>
+    </Grid>
+</Window>
