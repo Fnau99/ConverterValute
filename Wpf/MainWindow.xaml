@@ -23,7 +23,7 @@
         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
             <ComboBox Width="150" Height="50" DisplayMemberPath="Testo" SelectedValuePath="Valore" ItemsSource="{Binding Valute}" SelectedValue="{Binding ValoreSelezionatoa}"></ComboBox>
             <Button Width="100" Height="50" Click="Button_Click">Converti</Button>
-            <Label Content="{Binding Risultato}"></Label>
+            <Label Content="{Binding Risultato}" Margin="10 90 0 0"></Label>
         </StackPanel>
     </Grid>
 </Window>
