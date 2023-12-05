@@ -55,6 +55,18 @@ namespace Converter
 
         double ConvertiDaFranchiAEuro(double value);
 
+        [OperationContract]
+
+        double ConvertiDaEuroADem(double value);
+
+        [OperationContract]
+
+        double ConvertiDaEuroALira(double value);
+
+        [OperationContract]
+
+        double ConvertiDaEuroAFranchi(double value);
+
     }
         // TODO: Add your service operations here
 

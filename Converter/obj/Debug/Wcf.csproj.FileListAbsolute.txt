@@ -5,3 +5,10 @@ C:\Users\Corso_2023\Desktop\Converter\obj\Debug\Wcf.csproj.AssemblyReference.cac
 C:\Users\Corso_2023\Desktop\Converter\obj\Debug\Wcf.csproj.CoreCompileInputs.cache
 C:\Users\Corso_2023\Desktop\Converter\obj\Debug\Converter.dll
 C:\Users\Corso_2023\Desktop\Converter\obj\Debug\Converter.pdb
+C:\Users\Corso_2023\Desktop\ConverterValute\Converter\bin\Converter.dll.config
+C:\Users\Corso_2023\Desktop\ConverterValute\Converter\bin\Converter.dll
+C:\Users\Corso_2023\Desktop\ConverterValute\Converter\bin\Converter.pdb
+C:\Users\Corso_2023\Desktop\ConverterValute\Converter\obj\Debug\Wcf.csproj.AssemblyReference.cache
+C:\Users\Corso_2023\Desktop\ConverterValute\Converter\obj\Debug\Wcf.csproj.CoreCompileInputs.cache
+C:\Users\Corso_2023\Desktop\ConverterValute\Converter\obj\Debug\Converter.dll
+C:\Users\Corso_2023\Desktop\ConverterValute\Converter\obj\Debug\Converter.pdb
